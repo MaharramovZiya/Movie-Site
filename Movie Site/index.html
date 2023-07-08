@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="mWrapper">
+        <!-- nav -->
+        <div class="container firstCont">
+            <nav id="navbar" class="navbar navbar-dark bg-transparent">
+                <div class="container-fluid">
+                    <a id="logo" class="navbar-brand" href="#">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                    
+                    <div class="input-group">
+                        <div class="form-outline">
+                          <input id="search-input" type="search" id="form1" class="form-control" placeholder="Search" />
+                        </div>
+                        <button id="search-button" type="button" class="btn btn-danger">
+                          <i class="fas fa-search"></i>
+                        </button>
+                      </div>
+
+
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                        aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">New Movies</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">IMDP</a>
+                                </li>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-danger" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Main -->
+        <main id="main">
+            <div class="container">
+                <div class="main-row">
+                    <div class="luckiestgirl mCont">
+                        <img class="movieImg" src="movies-images/luckiestgirl.jpg" alt="">
+                        <div class="top-desc">
+                            <div class="all imdb">
+                                <i class="fa-brands fa-imdb"></i>IMDB: 6.4/10
+                            </div>
+                            <div class="all watch">
+                                <i class="fa-regular fa-eye"></i>IZLENME: 10.46b
+                            </div>
+                        </div>
+                        <div class="bottom-desc all">
+                            <a href="#"><h1>Luckiest Girl Alive (2019)</h1></a>
+                        </div>
+                    </div>
+                    <div class="montanaStory mCont">
+                        <img src="movies-images/montana-story.jpg" alt="">
+                        <div class="top-desc">
+                            <div class="all imdb">
+                                <i class="fa-brands fa-imdb"></i>IMDB: 5.2/10
+                            </div>
+                            <div class="all watch">
+                                <i class="fa-regular fa-eye"></i>IZLENME: 11.31b
+                            </div>
+                        </div>
+                        <div class="bottom-desc all">
+                            <a href="#"><h1>Montana Story (2021)</h1></a>
+                        </div>
+                    </div>
+                    <div class="theContractor mCont">
+                        <img src="movies-images/theContractor.jpg" alt="">
+                        <div class="top-desc">
+                            <div class="all imdb">
+                                <i class="fa-brands fa-imdb"></i>IMDB: 7.4/10
+                            </div>
+                            <div class="all watch">
+                                <i class="fa-regular fa-eye"></i>IZLENME: 4.5b
+                            </div>
+                        </div>
+                        <div class="bottom-desc all">
+                            <a href="#"><h1>The Contractor (2018)</h1></a>
+                        </div>
+                    </div>
+                    <div class="dark mCont">
+                        <img src="movies-images/dark.jpg" alt="">
+                        <div class="top-desc">
+                            <div class="all imdb">
+                                <i class="fa-brands fa-imdb"></i>IMDB: 4.4/10
+                            </div>
+                            <div class="all watch">
+                                <i class="fa-regular fa-eye"></i>IZLENME: 16.22b
+                            </div>
+                        </div>
+                        <div class="bottom-desc all">
+                            <a href="#"><h1>Dark - Karanlik (2019)</h1></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-row">
+                    <div class="greenbok mCont">
+                        <img src="movies-images/greenbok.jpg" alt="">
+                        <div class="top-desc">
+                            <div class="all imdb">
+                                <i class="fa-brands fa-imdb"></i>IMDB: 8.8/10
+                            </div>
+                            <div class="all watch">
+                                <i class="fa-regular fa-eye"></i>IZLENME: 16.11b
+                            </div>
+                        </div>
+                        <div class="bottom-desc all">
+                            <a href="#"><h1>Green Book (2017)</h1></a>
+                        </div>
+                    </div>
+                    <div class="americanSiege mCont">
+                        <img src="movies-images/americanSiege.jpg" alt="">
+                        <div class="top-desc">
+                            <div class="all imdb">
+                                <i class="fa-brands fa-imdb"></i>IMDB: 6.6/10
+                            </div>
+                            <div class="all watch">
+                                <i class="fa-regular fa-eye"></i>IZLENME: 9.4b
+                            </div>
+                        </div>
+                        <div class="bottom-desc all">
+                           <a href="#"> <h1>American Siege (2019)</h1></a>
+                        </div>
+                    </div>
+                    <div class="countDown mCont">
+                        <img src="movies-images/countDown.jpg" alt="">
+                        <div class="top-desc">
+                            <div class="all imdb">
+                                <i class="fa-brands fa-imdb"></i>IMDB: 9.3/10
+                            </div>
+                            <div class="all watch">
+                                <i class="fa-regular fa-eye"></i>IZLENME: 22.3b
+                            </div>
+                        </div>
+                        <div class="bottom-desc all">
+                            <a href="#"><h1>COUNTDOWN (2016)</h1></a>
+                        </div>
+                    </div>
+                    <div class="sniper mCont">
+                        <img src="movies-images/sniperWhiteRiven.jpg" alt="">
+                        <div class="top-desc">
+                            <div class="all imdb">
+                                <i class="fa-brands fa-imdb"></i>IMDB: 6.4/10
+                            </div>
+                            <div class="all watch">
+                                <i class="fa-regular fa-eye"></i>IZLENME: 10.46b
+                            </div>
+                        </div>
+                        <div class="bottom-desc all">
+                            <a href="#"><h1>SNIPER THE WHITE RIVEN</h1></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-row">
+                    <div class="planAplanB mCont">
+                        <img src="movies-images/planAB.jpg" alt="">
+                        <div class="top-desc">
+                            <div class="all imdb">
+                                <i class="fa-brands fa-imdb"></i>IMDB: 7.1/10
+                            </div>
+                            <div class="all watch">
+                                <i class="fa-regular fa-eye"></i>IZLENME: 5.66b
+                            </div>
+                        </div>
+                        <div class="bottom-desc all">
+                            <a href="#"><h1>PLAN A PLAN B (2014)</h1></a>
+                        </div>
+                    </div>
+                    <div class="jumpingfromHighPlaces mCont">
+                        <img src="movies-images/jumpingFromHighPlaces.jpg" alt="">
+                        <div class="top-desc">
+                            <div class="all imdb">
+                                <i class="fa-brands fa-imdb"></i>IMDB: 5.5/10
+                            </div>
+                            <div class="all watch">
+                                <i class="fa-regular fa-eye"></i>IZLENME: 9.43b
+                            </div>
+                        </div>
+                        <div class="bottom-desc all">
+                            <a href="#"><h1>JUMPING From High PLACES (2020)</h1></a>
+                        </div>
+                    </div>
+                    <div class="themThem mCont">
+                        <img src="movies-images/theyThem.jpg" alt="">
+                        <div class="top-desc">
+                            <div class="all imdb">
+                                <i class="fa-brands fa-imdb"></i>IMDB: 8.4/10
+                            </div>
+                            <div class="all watch">
+                                <i class="fa-regular fa-eye"></i>IZLENME: 13.96b
+                            </div>
+                        </div>
+                        <div class="bottom-desc all">
+                            <a href="#"><h1>They/Them (2019)</h1></a>
+                        </div>
+                    </div>
+                    <div class="inheritence mCont">
+                        <img src="movies-images/inheritance.jpg" alt="">
+                        <div class="top-desc">
+                            <div class="all imdb">
+                                <i class="fa-brands fa-imdb"></i>IMDB: 7.4/10
+                            </div>
+                            <div class="all watch">
+                                <i class="fa-regular fa-eye"></i>IZLENME: 12.22b
+                            </div>
+                        </div>
+                        <div class="bottom-desc all">
+                            <a href="#"><h1>INHERITANCE (2021)</h1></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-row">
+                    <div class="perdida mCont">
+                        <img src="movies-images/perdida.jpg" alt="">
+                        <div class="top-desc">
+                            <div class="all imdb">
+                                <i class="fa-brands fa-imdb"></i>IMDB: 5.5/10
+                            </div>
+                            <div class="all watch">
+                                <i class="fa-regular fa-eye"></i>IZLENME: 50.76b
+                            </div>
+                        </div>
+                        <div class="bottom-desc all">
+                            <a href="#"><h1>PERDIDA (2020)</h1></a>
+                        </div>
+
+                    </div>
+                    <div class="chaosWalking mCont">
+                        <img src="movies-images/chaosWalking.jpg" alt="">
+                        <div class="top-desc">
+                            <div class="all imdb">
+                                <i class="fa-brands fa-imdb"></i>IMDB: 8.8/10
+                            </div>
+                            <div class="all watch">
+                                <i class="fa-regular fa-eye"></i>IZLENME: 16.46b
+                            </div>
+                        </div>
+                        <div class="bottom-desc all">
+                            <a href="#"><h1>CAOS EL INICO (2022)</h1></a>
+                        </div>
+
+                    </div>
+                    <div class="glorious mCont">
+                        <img src="movies-images/glorious.jpg" alt="">
+                        <div class="top-desc">
+                            <div class="all imdb">
+                                <i class="fa-brands fa-imdb"></i>IMDB: 8.4/10
+                            </div>
+                            <div class="all watch">
+                                <i class="fa-regular fa-eye"></i>IZLENME: 11.46b
+                            </div>
+                        </div>
+                        <div class="bottom-desc all">
+                            <a href="#"><h1>GLORIOUS (2019)</h1></a>
+                        </div>
+
+                    </div>
+                    <div class="beast mCont">
+                        <img src="movies-images/beast.jpg" alt="">
+                        <div class="top-desc">
+                            <div class="all imdb">
+                                <i class="fa-brands fa-imdb"></i>IMDB: 3.4/10
+                            </div>
+                            <div class="all watch">
+                                <i class="fa-regular fa-eye"></i>IZLENME: 4.46b
+                            </div>
+                        </div>
+                        <div class="bottom-desc all">
+                            <a href="#"><h1>BEAST (CANAVAR) (2019)</h1></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <!-- footer -->
+        <footer id="footer">
+            <div class="containerf">
+                <footer class="py-5">
+                  <div class="row">
+                    <div class="col-6 col-md-2 mb-3">
+                      <h5>Home</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Movies</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">IMDB</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Most Viewed</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">2022 Movies</a></li>
+                      </ul>
+                    </div>
+              
+                    <div class="col-6 col-md-2 mb-3">
+                      <h5>About</h5>
+                      <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Since 2019 movie site</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Our workers about</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Why this site</a></li>
+                      </ul>
+                    </div>
+              
+                    <div class="col-6 col-md-2 mb-3">
+                      <h5>Contact</h5>
+                      <ul class="nav flex-column">
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Telephone Number: +90 574 384 49 32</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Email Adress: alwaysRelax@gmail.com</a></li>
+                          <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Office Number: +03 293</a></li>
+            
+                      </ul>
+                    </div>
+              
+                    <div class="col-md-5 offset-md-1 mb-3">
+                      <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p class="fromUS">Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                          <label for="newsletter1" class="visually-hidden">Email address</label>
+                          <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                          <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+              
+                  <div class="company d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>© 2022 Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                      <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                    </ul>
+                  </div>
+                </footer>
+              </div>
+        </footer>
+    </section>
+    <script src="script.js">
+ 
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
